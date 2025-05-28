@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The BearFruit Studios</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    </head>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #2a4e3c;
+    color: #eee;
+    font-family: Poppins;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+}
+        
+        .about {
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        
+        .about h1 {
+            color: white;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .about p {
+            max-width: 100%; 
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px; 
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px; 
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover; 
+            border-radius: 15px; 
+        }
+        
+        .description-bg {
+            background: rgba(30, 30, 30, 0.78); /* semi-transparent dark grey */
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(20, 20, 20, 0.22);
+            padding: 40px 50px;
+            max-width: 1200px;
+            margin: 40px auto 0 auto;
+        }
+
+        .description {
+            color: white;
+            font-size: 18px; 
+            line-height: 1.7; 
+            text-align: justify; 
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .description p {
+            margin-bottom: 20px; 
+            font-weight: 300; 
+        }
+
+        .description p:first-child {
+            margin-top: 0; 
+        }
+
+        .description p:last-child {
+            margin-bottom: 0;
+        }
+
+    
+ footer {
+    background-color: #506d5dd5;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p:last-child {
+    font-size: 0.95em;
+    margin-bottom: 0;
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+.navbar.scrolled {
+    background: rgba(57, 92, 62, 0.877); /* Dark background */
+}
+ /* Scroll to Top Button */
+ #scrollUpArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 2rem;
+    background-color: rgba(119, 122, 120, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 100;
+    transition: opacity 0.3s ease;
+}
+
+#scrollUpArrow:hover {
+    font-size: 2.5rem;
+    background-color: rgba(160, 151, 151, 0);
+    z-index: 100;
+}
+    </style>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">The BearFruits Studios</div>
+            <div>
+                <a href="homepage.html"><i class="fas fa-home"></i> Home</a>
+                <a href="album.php">Album</a> 
+                <!-- <a href="#services"><i class="fas fa-briefcase"></i> Services</a> -->
+                <!-- <a href="#contact"><i class="fas fa-envelope"></i> Contact</a> -->
+                <a href="http://localhost/book.html" class="book-btn">Book Now</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="about">
+        <h1>ABOUT US</h1>
+    </div>
+    
+    <div class="gallery">
+        <img src="https://ucf08f2f0016c39910241b6c1985.previews.dropboxusercontent.com/p/thumb/ACk25U2nHSWZYk8v4Vkrye82bUuFZgwNFAyEOoDMfp95FCr1cKyryFKpOs_5-I-OUJvxxLuEKyJXvuglq3iIS1zY_6-xpcUXYaHs3ATq-NkMSHPEJnBmBpkBciqKZ_R2WeleGyCHZYC39xHohHmwAFVcSCFcyIxb43TtqiauL6n-FeNz7YAIAjwLYhDzht5a86YNbe8hH7hiaH9p-aWB3ob34NruChDaGwsoe4-sIsOrCjmK82j6THL--ffc-j_d8oj8ZPbCtNqbtKkQxmqBl404c7QVJ477yUkjXwLczAedLiO3yaxtFFEum1IwpNXBZ_cBiquaW9pZavfaa04EwYfL3oui-XZIaq2zD69SNIvNWTtdBKPaRPZ2-4vSoneoRx148C40IUDelRXwfjZTz_hZR17bSkA3nr9u860eezCxf6Hb1Ip4FVp1EW-QUzNqn7YqObN9ELs-o1GTKk7uUmdL-NHD8ptdb0THnaVQ39sjxVdOZ8S-b_nsO439a338rhlxjlAJju1W7uyg4P-pu7lvaSNqVdJfT8_BR15hBrwMFFpVsJdSTub57KtP89AZbjSXsR8iT5cXVKV2oy75u2wo/p.jpeg" alt="Wedding Photography">
+        <img src="https://uc503bfdca27f48cadfe0f413ce8.previews.dropboxusercontent.com/p/thumb/ACnNfI3O10Kg-lJHL1esDoiGFqLFEYd782WqKVMWIofgJ1-nmnAMorRQgszl6PsKKsu0Pzo4nWmbRxPjpDCDPiH-tIyJiuggxxAq6oSbW6Dl0ozlnCsvxY_EHizR6_bYFue8EWn-um1HlfdZizOXqg41Ku4WnIctiNgcFEdBYDhbQqURL70uVt8Fh6d-zWi2N-pkDZL2p6d4J0GiLZPzH4Y4rWbwlHjDZ-iTfmEtZ77unSqi1HbMXSyxh1Kai8w6K3krAKYzMu1PJDvvqnsPYs4XTmQDS1kW_tMz0yDjNwFuEhuK-Sb-rh7Mahh08gCMvVw_ZthZ_xrdFO_fSInYDyDXtV4VPobC0mPl4HbeZ38yzQ/p.jpeg" alt="Photography Example">
+        <img src="https://uce3fe3d673abeefb6d3ad2f79bf.previews.dropboxusercontent.com/p/thumb/ACmfoGmtQ48uT9B7sVQbVq7HVGwYrdQr8VDY2rLPksEvAA1oOi8OpLB9Rbj4yFRyV36l9qURZZkO6q19Updut3OQb8HPbZm73-L8RbdCzGaNxq8NjIA9NBoNcf_2u_Xt6pQw1cW6HID_7EqRiAQlrEOhoXOA3DxTwf-LjR86stblPwOfLZfsLiNIxnAm-Y-LnZSIUldWVJE6vu16KbQCecDwNDQ-PiaD1UMWBB8-BWLL5zFqAuOqQ5U31v47P1xzqLpiMgKE2lnjexgJmeyQTHF2Eo15kTLp7rWQURPfQdsXxcaMRMpzDqH2KBFXEZ10Bomd3iEUGxHCUDf9AGpOMw4bI9D_IB0zyTi_viceV8-9KQ/p.jpeg" alt="Photography Example"> 
+    </div>
+
+    <div class="description-bg">
+      <div class="description">
+          <p>At The BearFruit Studios, we believe that love deserves to be captured in all its beauty and elegance. We specialize in documenting life’s most precious moments—your wedding day, the romance of engagement sessions, and the celebration of unforgettable milestones.</p>
+      
+          <p>From the first glance to the final toast, we capture every fleeting moment, turning them into timeless photographs that tell your unique story. Our goal is simple: to create stunning visuals that will bring you back to those moments of joy, love, and laughter each time you look at them.</p>
+      
+          <p>Whether it’s the sacred exchange of vows, the laughter shared at a debut, or the intimate moments of a prenup shoot, we are committed to preserving the essence of your celebration in every image. Our approach combines artistry with professionalism to ensure that every photo reflects the spirit of your occasion.</p>
+      
+          <p>We take pride in offering a personalized experience for every couple. Working closely with you, we ensure that your vision comes to life, creating a photography experience that’s as unique as the love you share. Each photo is carefully crafted to not only document the event but to capture the emotions, the elegance, and the beauty of your day.</p>
+      
+          <p>At The BearFruit Studios, we cherish the opportunity to be part of your special day, and we are honored to tell your story through beautiful, high-quality images that you’ll treasure for a lifetime. Let us help you preserve the memories that matter most, beautifully and timelessly.</p>
+      
+          <p>Ready to create unforgettable memories? Get in touch with us today, and let’s start planning the perfect photography experience for you.</p>
+      </div>
+    </div>
+    
+<div style="text-align: center; margin-top: 40px;">
+    <a href="https://www.facebook.com/thebearfruitstudios" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fthebearfruitstudios%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR1OY23xxkoIxa0XjTVfuUV0EiiK_fBA4C-FYLArf29_70fTZlBCCJd0FEA_aem_LMEVd9UM8YvO7358Md2gsQ&h=AT1ePvoy29SvylaOpXM4GkduKbH_z6pXVuVx29q8UXcM7jqGpTRKCbwy3p7-G1YH4KJx2wu28D0DqVd7UF5t938lhaHrAyCp2vwnup83FBEPjrcJKzmMm5Cuh6dm31PdVmGD" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+    <!-- footers -->
+<footer>
+    <p>&copy; 2025 The BearFruit Studios</p>
+    <p>Crafted with passion & creativity · All rights reserved</p>
+</footer>    
+<!-- Scroll to Top Button -->
+<div id="scrollUpArrow" onclick="scrollToTop()">↑</div>    
+  
+  
+  <script>
+
+        window.onscroll = function () {
+        const navbar = document.getElementById("navbar");
+        const scrollUpArrow = document.getElementById("scrollUpArrow");
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            navbar.classList.add("scrolled"); 
+            scrollUpArrow.style.display = "block"; 
+        } else {
+            navbar.classList.remove("scrolled");
+            scrollUpArrow.style.display = "none"; 
+        }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BearFruit Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel=" icon" href="" -->
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">The BearFruits Studios</div>
+            <div>
+                <a href="#" onclick="window.location.reload();" class="home-btn"><i class="fas fa-home"></i> Home </a>
+                <a href="album.php">Album</a> 
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <!-- <a href="#services"><i class="fas fa-briefcase"></i> Services</a> -->
+                <!-- <a href="#contact"><i class="fas fa-envelope"></i> Contact</a> -->
+                <!-- Added "Book Now" Button -->
+                <a href="http://localhost/book.html" class="book-btn">Book Now</a>
+              
+            </div>
+        </nav>
+    </header>
+
+     <!-- Start sa carousel -->                                                                
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="img/img1.jpg">
+                <div class="content">
+                    <div class="author">The Bearfruit Studio</div>
+                    <div class="title">WELCOME TO THE</div>
+                    <div class="topic">BEARFRUIT STUDIO</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        We Capture Every Special Moment of Yours
+                    </div>
+                    <div class="buttons">
+                        <a href="album.php" class="button-link">
+                            <button>SEE MORE</button>
+                        </a>
+                        <a href="http://localhost/book.html" class="button-link">
+                            <button>INQUIRE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img2.jpg">
+                <div class="content">
+                    <div class="author">The Bearfruit Studio</div>
+                    <div class="title">THE BRIDE</div>
+                    <div class="topic">******</div>
+                    <div class="des">
+                        Every details of yours is very important to us.
+                    </div>
+                    <div class="buttons">
+                        <a href="album.php" class="button-link">
+                            <button>SEE MORE</button>
+                        </a>
+                        <a href="http://localhost/book.html class="button-link">
+                            <button>INQUIRE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img3.jpg">
+                <div class="content">
+                    <div class="author">The Bearfruit Studio</div>
+                    <div class="title">THE WEDDING</div>
+                    <div class="topic">Of this lovers</div>
+                    <div class="des">
+                        This is the owner of this website and also their wedding.
+                    </div>
+                    <div class="buttons">
+                        <a href="album.php" class="button-link">
+                            <button>SEE MORE</button>
+                        </a>
+                        <a href="http://localhost/book.html" class="button-link">
+                            <button>INQUIRE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img4.jpg">
+                <div class="content">
+                    <div class="author">BOSSING</div>
+                    <div class="title">AMBOT</div>
+                    <div class="topic">WEDDING</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <a href="album.php" class="button-link">
+                            <button>SEE MORE</button>
+                        </a>
+                        <a href="http://localhost/book.html" class="button-link">
+                            <button>INQUIRE</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!--  start Video Section -->
+    <div class="section video-section" id="promo-video">
+        <!-- Video Element -->
+        <video autoplay muted loop>
+            <source src="https://video.wixstatic.com/video/11062b_59f59e6f879142ecaf705d789bd84e77/1080p/mp4/file.mp4?fileUsed=false" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Overlay Content -->
+        <div class="content2">
+            <!-- Description Text on the left side -->
+            <div class="description">
+                <h2>Capture Your Special Moments</h2>
+                <p>Specializing in weddings and debuts, we turn your most meaningful celebrations into timeless memories. Whether it's the elegance of your wedding day or the joy of a debut, the BearFruits Studios ensures every emotion, every detail, and every moment is captured perfectly, creating a story you’ll treasure forever.</p>
+            </div>
+    
+            <!-- Image on the right side -->
+            <div class="overlay">
+                <a href="about.html">
+                    <img src="img/img6.jpg" alt="Sample Image">
+                </a>
+               </div>
+        </div>
+    </div>
+    
+    
+    <!-- end of Video section -->
+
+                 <!-- Icons -->
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://www.facebook.com/thebearfruitstudios" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fthebearfruitstudios%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR1OY23xxkoIxa0XjTVfuUV0EiiK_fBA4C-FYLArf29_70fTZlBCCJd0FEA_aem_LMEVd9UM8YvO7358Md2gsQ&h=AT1ePvoy29SvylaOpXM4GkduKbH_z6pXVuVx29q8UXcM7jqGpTRKCbwy3p7-G1YH4KJx2wu28D0DqVd7UF5t938lhaHrAyCp2vwnup83FBEPjrcJKzmMm5Cuh6dm31PdVmGD" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+                <!-- footers -->
+            <footer>
+                <p>&copy; 2025 The BearFruit Studios</p>
+                <p>Crafted with passion & creativity · All rights reserved</p>
+            </footer>    
+            <!-- Scroll to Top Button -->
+            <div id="scrollUpArrow" onclick="scrollToTop()">↑</div>    
+
+
+
+                                                                                       
+    <script src="app.js"></script>
+</body>
+</html>

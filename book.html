@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - The BearFruits Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+body{
+ margin: 0;
+ background-color: #2a4e3c;
+ color: #eee;
+ font-family: Poppins;
+ font-size: 12px;
+ background-image: url(img/img7.jpg);
+}
+a{
+ text-decoration: none;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+ color: #eee;
+ margin-right: 40px;
+}
+   /* Footer Styles */
+   footer {
+    background-color: #506d5dd5;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p:last-child {
+    font-size: 0.95em;
+    margin-bottom: 0;
+}
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+.navbar.scrolled {
+    background: rgba(57, 92, 62, 0.877); /* background */
+}
+ /* Scroll to Top Button */
+ #scrollUpArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 2rem;
+    background-color: rgba(119, 122, 120, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 100;
+    transition: opacity 0.3s ease;
+}
+
+#scrollUpArrow:hover {
+    font-size: 2.5rem;
+    background-color: rgba(160, 151, 151, 0);
+    z-index: 100;
+}
+
+        /* Book Section */
+        .book-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('your-booking-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .booking-form {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .booking-form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .booking-form input, .booking-form select, .booking-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .booking-form button {
+            padding: 12px 25px;
+            border-radius: 5px;
+            background-color: #234b3a;
+            color: #ebf0ee;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .booking-form button:hover {
+            background-color: #265e47;
+            color: #fff;
+        }
+
+
+
+    </style>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">The BearFruits Studios</div>
+        <div>
+            <a href="homepage.html"><i class="fas fa-home"></i> Home</a>
+            <a href="album.php">Album</a> 
+            <a href="about.html" class="fas fa-user"></i> About</a>
+            <!-- <a href="services.html"><i class="fas fa-briefcase"></i> Services</a> -->
+            <!-- <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a> -->
+            
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <div class="book-section">
+        <div class="booking-form">
+            <h2>Book Your Session</h2>
+            <form action="db_connection.php" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="date" name="booking_date" placeholder="Booking Date" min="<?= date('Y-m-d'); ?>" required>
+                
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="Wedding Photography">Wedding Photography</option>
+                    <option value="Debut Photography">Debut Photography</option>
+                </select>
+                <textarea name="message" placeholder="Message (optional)" rows="4"></textarea>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <!-- Icons -->
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://www.facebook.com/thebearfruitstudios" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+        <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fthebearfruitstudios%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR1OY23xxkoIxa0XjTVfuUV0EiiK_fBA4C-FYLArf29_70fTZlBCCJd0FEA_aem_LMEVd9UM8YvO7358Md2gsQ&h=AT1ePvoy29SvylaOpXM4GkduKbH_z6pXVuVx29q8UXcM7jqGpTRKCbwy3p7-G1YH4KJx2wu28D0DqVd7UF5t938lhaHrAyCp2vwnup83FBEPjrcJKzmMm5Cuh6dm31PdVmGD" target="_blank" style="color: white; font-size: 2em; margin: 0 15px;">
+        <i class="fab fa-instagram"></i>
+        </a>
+            </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The BearFruit Studios</p>
+        <p>Crafted with passion & creativity · All rights reserved</p>
+    </footer>  
+   
+    <div id="scrollUpArrow" onclick="scrollToTop()">↑</div>   
+
+    <script>
+        window.onscroll = function () {
+            const navbar = document.getElementById("navbar");
+            const scrollUpArrow = document.getElementById("scrollUpArrow");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                navbar.classList.add("scrolled"); 
+                scrollUpArrow.style.display = "block"; 
+            } else {
+                navbar.classList.remove("scrolled");
+                scrollUpArrow.style.display = "none"; 
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Trigger "Book Now" button on Enter key press
+        document.addEventListener("DOMContentLoaded", function() {
+            const bookingForm = document.querySelector('.booking-form');
+            const bookButton = document.querySelector('.booking-form button');
+
+            // Listen for 'Enter' key press
+            bookingForm.addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    // Prevent default form submission
+                    event.preventDefault();
+                    
+                    // Trigger the button click
+                    bookButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
